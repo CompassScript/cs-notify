@@ -31,14 +31,15 @@
 
 2- exports['cs-notify']:Notify('SUCCESS', 'Lorem Ipsum.', 5000, 'fa-solid fa-check', 'yourtypename')
 
-**Clientside**
+- **Clientside**
 exports['cs-notify']:Notify('title', 'message', time(int), 'icon', 'type')
-**Serverside**
+
+- **Serverside**
 TriggerClientEvent('cs-notify:Notify', source, 'title', 'message', time(int), 'icon', 'type')
 **Icon**
 https://fontawesome.com/search?m=free&s=solid%2Cbrands
 
-**Preview**
+- **Preview**
 https://streamable.com/tr2utq
 
 
