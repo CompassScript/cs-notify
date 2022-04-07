@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --colorOne: #e65245;
+    --colorIndicator: linear-gradient(to right, #e65245, #e43a15);
+}
+
+* {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+body{
+    overflow: hidden;
+}
+
+.compassMain{
+    float: right;
+    width: 25vw;
+    color: white;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.compassBody{
+    display: flex;
+    border-radius: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.compassIconBody{
+    width: 20%;
+    /* align-self: center; */
+    text-align: center;
+    position: relative;
+}
+
+.compassTextBody{
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+
+.compassDescription{
+    font-weight: 400;
+    padding: 1rem;
+    margin: 0;
+}
+
+.compassBody > .indicator {
+    position: absolute;
+    background: var(--colorIndicator);
+    width: 100%;
+    height: 0.5rem;
+    bottom: 0;
+}
+
+.compassIconInner{
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.svgColor{
+    color: var(--colorOne);
+}
+
+.natural {
+    background: linear-gradient(255deg, #66676800 -15%, #1a1a1a 95%);
+    color: white;
+}
+
+.natural .compassTextBody .compassTitle {
+    margin-top: 0.5rem;
+    color: #ebc829;
+    font-weight: 600;
+}
+
+.info {
+    background: linear-gradient(255deg, #66676800 -15%, #ffffff 95%);
+    color: rgb(39, 39, 39);
+}
+.info .compassTextBody .compassTitle {
+    margin-top: 0.5rem;
+    color: #0d21d4;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.error {
+    background: linear-gradient(255deg, #66676800 -15%, #960808 95%);
+}
+.error .compassTextBody .compassTitle {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.success {
+    background: linear-gradient(255deg, #66676800 5%, #1e9700 95%);
+    /* color: #3c3c3c; */
+}
+.success .compassTextBody .compassTitle {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
